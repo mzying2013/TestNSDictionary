@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0E98532485FE8C0051DDB7 /* TestBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E98522485FE8C0051DDB7 /* TestBaseObject.m */; };
+		0C0E98572485FF550051DDB7 /* TestDefaultDictionaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E98562485FF550051DDB7 /* TestDefaultDictionaryObject.m */; };
+		0C0E985A2485FF740051DDB7 /* TestEqualDictionaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E98592485FF740051DDB7 /* TestEqualDictionaryObject.m */; };
 		0C35874D2481179D00006886 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C35874C2481179D00006886 /* main.m */; };
+		0C3587552482571500006886 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3587542482571500006886 /* TestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C0E98512485FE8C0051DDB7 /* TestBaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBaseObject.h; sourceTree = "<group>"; };
+		0C0E98522485FE8C0051DDB7 /* TestBaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBaseObject.m; sourceTree = "<group>"; };
+		0C0E98552485FF550051DDB7 /* TestDefaultDictionaryObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDefaultDictionaryObject.h; sourceTree = "<group>"; };
+		0C0E98562485FF550051DDB7 /* TestDefaultDictionaryObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDefaultDictionaryObject.m; sourceTree = "<group>"; };
+		0C0E98582485FF740051DDB7 /* TestEqualDictionaryObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEqualDictionaryObject.h; sourceTree = "<group>"; };
+		0C0E98592485FF740051DDB7 /* TestEqualDictionaryObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEqualDictionaryObject.m; sourceTree = "<group>"; };
 		0C3587492481179D00006886 /* TestNSDictionary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestNSDictionary; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C35874C2481179D00006886 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C3587532482571500006886 /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		0C3587542482571500006886 /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C0E98542485FF080051DDB7 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E98552485FF550051DDB7 /* TestDefaultDictionaryObject.h */,
+				0C0E98562485FF550051DDB7 /* TestDefaultDictionaryObject.m */,
+				0C0E98582485FF740051DDB7 /* TestEqualDictionaryObject.h */,
+				0C0E98592485FF740051DDB7 /* TestEqualDictionaryObject.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
 		0C3587402481179D00006886 = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +80,12 @@
 		0C35874B2481179D00006886 /* TestNSDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				0C0E98512485FE8C0051DDB7 /* TestBaseObject.h */,
+				0C0E98522485FE8C0051DDB7 /* TestBaseObject.m */,
+				0C0E98542485FF080051DDB7 /* NSDictionary */,
 				0C35874C2481179D00006886 /* main.m */,
+				0C3587532482571500006886 /* TestObject.h */,
+				0C3587542482571500006886 /* TestObject.m */,
 			);
 			path = TestNSDictionary;
 			sourceTree = "<group>";
@@ -119,6 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3587552482571500006886 /* TestObject.m in Sources */,
+				0C0E98532485FE8C0051DDB7 /* TestBaseObject.m in Sources */,
+				0C0E985A2485FF740051DDB7 /* TestEqualDictionaryObject.m in Sources */,
+				0C0E98572485FF550051DDB7 /* TestDefaultDictionaryObject.m in Sources */,
 				0C35874D2481179D00006886 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
