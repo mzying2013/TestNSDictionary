@@ -12,6 +12,7 @@
 
 #import "TestDefaultDictionaryObject.h"
 #import "TestEqualDictionaryObject.h"
+#import "TestEqualArrayObject.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -19,14 +20,14 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         
         
-        TestObject *ob1 = [[TestObject alloc] initWithName:@"wahaha1" age:@(1) hegiht:1];
-        TestObject *ob2 = [[TestObject alloc] initWithName:@"wahaha2" age:@(2) hegiht:2];
-        TestObject *ob3 = [[TestObject alloc] initWithName:@"wahaha3" age:@(3) hegiht:3];
-        TestObject *ob4 = [[TestObject alloc] initWithName:@"wahaha4" age:@(4) hegiht:4];
-        TestObject *obC = [[TestObject alloc] initWithName:@"wahaha4" age:@(4) hegiht:4];
-        
-        NSArray *obList = @[ob1, ob2, ob3, ob4];
-        NSArray *obList2 = @[ob1, ob2, ob3, ob4];
+//        TestObject *ob1 = [[TestObject alloc] initWithName:@"wahaha1" age:@(1) hegiht:1];
+//        TestObject *ob2 = [[TestObject alloc] initWithName:@"wahaha2" age:@(2) hegiht:2];
+//        TestObject *ob3 = [[TestObject alloc] initWithName:@"wahaha3" age:@(3) hegiht:3];
+//        TestObject *ob4 = [[TestObject alloc] initWithName:@"wahaha4" age:@(4) hegiht:4];
+//        TestObject *obC = [[TestObject alloc] initWithName:@"wahaha4" age:@(4) hegiht:4];
+//
+//        NSArray *obList = @[ob1, ob2, ob3, ob4];
+//        NSArray *obList2 = @[ob1, ob2, ob3, ob4];
         
         
         
@@ -50,25 +51,27 @@ int main(int argc, const char * argv[]) {
         
 //        NSLog(@"obj:%zi hash:%zi", (NSUInteger)ob4, [ob4 hash]);
         
-//        NSColor *color1 = [NSColor blueColor];
-//        NSColor *color2 = [NSColor blueColor];
+//        NSColor *color1 = [NSColor blueColor];\
 //
 //        NSLog(@"color1:%p color2:%p", color1, color2);
         
-        NSLog(@"-----Dictionary Begin---------");
-
-        NSMutableDictionary *tempMDictionary = [NSMutableDictionary new];
-        [tempMDictionary setObject:@"1" forKey:ob4];
-        [tempMDictionary setObject:@"2" forKey:obC];
-
-        NSLog(@"%@ %@", tempMDictionary,tempMDictionary[obC]);
-
-        NSLog(@"-----Dictionary End---------");
+//        NSLog(@"-----Dictionary Begin---------");
+//
+//        NSMutableDictionary *tempMDictionary = [NSMutableDictionary new];
+//        [tempMDictionary setObject:@"1" forKey:ob4];
+//        [tempMDictionary setObject:@"2" forKey:obC];
+//
+//        NSLog(@"%@ %@", tempMDictionary,tempMDictionary[obC]);
+//
+//        NSLog(@"-----Dictionary End---------");
         
         
         
 //        [TestDefaultDictionaryObject run];
-        [TestEqualDictionaryObject run];        
+        
+        [TestBaseObject run];
+        [TestEqualDictionaryObject run];
+        [TestEqualArrayObject run];
         
     }
     return 0;
