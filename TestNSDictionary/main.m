@@ -55,15 +55,15 @@ int main(int argc, const char * argv[]) {
 //
 //        NSLog(@"color1:%p color2:%p", color1, color2);
         
-//        NSLog(@"-----Dictionary Begin---------");
-//
-//        NSMutableDictionary *tempMDictionary = [NSMutableDictionary new];
-//        [tempMDictionary setObject:@"1" forKey:ob4];
-//        [tempMDictionary setObject:@"2" forKey:obC];
-//
-//        NSLog(@"%@ %@", tempMDictionary,tempMDictionary[obC]);
-//
-//        NSLog(@"-----Dictionary End---------");
+        NSLog(@"-----Dictionary Begin---------");
+
+        NSMutableDictionary *tempMDictionary = [NSMutableDictionary new];
+        [tempMDictionary setObject:@"1" forKey:ob4];
+        [tempMDictionary setObject:@"2" forKey:obC];
+
+        NSLog(@"%@ %@", tempMDictionary,tempMDictionary[obC]);
+
+        NSLog(@"-----Dictionary End---------");
         
         
         
