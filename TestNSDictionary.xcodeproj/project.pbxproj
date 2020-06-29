@@ -10,8 +10,8 @@
 		0C0E98532485FE8C0051DDB7 /* TestBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E98522485FE8C0051DDB7 /* TestBaseObject.m */; };
 		0C0E98572485FF550051DDB7 /* TestDefaultDictionaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E98562485FF550051DDB7 /* TestDefaultDictionaryObject.m */; };
 		0C0E985A2485FF740051DDB7 /* TestEqualDictionaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E98592485FF740051DDB7 /* TestEqualDictionaryObject.m */; };
+		0C0F405624A9D03C00B947F5 /* TestEqualSetObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F405524A9D03C00B947F5 /* TestEqualSetObject.m */; };
 		0C35874D2481179D00006886 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C35874C2481179D00006886 /* main.m */; };
-		0C3587552482571500006886 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3587542482571500006886 /* TestObject.m */; };
 		0CE3FA26248744B900182554 /* TestEqualArrayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE3FA25248744B900182554 /* TestEqualArrayObject.m */; };
 /* End PBXBuildFile section */
 
@@ -34,10 +34,10 @@
 		0C0E98562485FF550051DDB7 /* TestDefaultDictionaryObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDefaultDictionaryObject.m; sourceTree = "<group>"; };
 		0C0E98582485FF740051DDB7 /* TestEqualDictionaryObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEqualDictionaryObject.h; sourceTree = "<group>"; };
 		0C0E98592485FF740051DDB7 /* TestEqualDictionaryObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEqualDictionaryObject.m; sourceTree = "<group>"; };
+		0C0F405424A9D03C00B947F5 /* TestEqualSetObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEqualSetObject.h; sourceTree = "<group>"; };
+		0C0F405524A9D03C00B947F5 /* TestEqualSetObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEqualSetObject.m; sourceTree = "<group>"; };
 		0C3587492481179D00006886 /* TestNSDictionary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestNSDictionary; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C35874C2481179D00006886 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0C3587532482571500006886 /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
-		0C3587542482571500006886 /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 		0CE3FA24248744B800182554 /* TestEqualArrayObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEqualArrayObject.h; sourceTree = "<group>"; };
 		0CE3FA25248744B900182554 /* TestEqualArrayObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEqualArrayObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +64,15 @@
 			path = NSDictionary;
 			sourceTree = "<group>";
 		};
+		0C0F405324A9D01500B947F5 /* NSSet */ = {
+			isa = PBXGroup;
+			children = (
+				0C0F405424A9D03C00B947F5 /* TestEqualSetObject.h */,
+				0C0F405524A9D03C00B947F5 /* TestEqualSetObject.m */,
+			);
+			path = NSSet;
+			sourceTree = "<group>";
+		};
 		0C3587402481179D00006886 = {
 			isa = PBXGroup;
 			children = (
@@ -85,11 +94,10 @@
 			children = (
 				0C0E98512485FE8C0051DDB7 /* TestBaseObject.h */,
 				0C0E98522485FE8C0051DDB7 /* TestBaseObject.m */,
+				0C0F405324A9D01500B947F5 /* NSSet */,
 				0CE3FA232487444C00182554 /* Array */,
 				0C0E98542485FF080051DDB7 /* NSDictionary */,
 				0C35874C2481179D00006886 /* main.m */,
-				0C3587532482571500006886 /* TestObject.h */,
-				0C3587542482571500006886 /* TestObject.m */,
 			);
 			path = TestNSDictionary;
 			sourceTree = "<group>";
@@ -160,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C3587552482571500006886 /* TestObject.m in Sources */,
+				0C0F405624A9D03C00B947F5 /* TestEqualSetObject.m in Sources */,
 				0C0E98532485FE8C0051DDB7 /* TestBaseObject.m in Sources */,
 				0C0E985A2485FF740051DDB7 /* TestEqualDictionaryObject.m in Sources */,
 				0C0E98572485FF550051DDB7 /* TestDefaultDictionaryObject.m in Sources */,

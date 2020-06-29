@@ -13,11 +13,24 @@
 #import "TestDefaultDictionaryObject.h"
 #import "TestEqualDictionaryObject.h"
 #import "TestEqualArrayObject.h"
+#import "TestEqualSetObject.h"
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
+        
+        //IndexPath
+        
+//        NSIndexPath *indexPath1 = [NSIndexPath indexPathForItem:0 inSection:1];
+//        NSIndexPath *indexPath2 = [NSIndexPath indexPathForItem:0 inSection:1];
+//
+//        NSMutableArray *testMArray = [NSMutableArray array];
+//        [testMArray addObject:indexPath1];
+//
+//        BOOL contain = [testMArray containsObject:indexPath2];
+//        BOOL equal = [indexPath1 isEqual:indexPath2];
+//        NSLog(@"%@ %@",contain?@"包含":@"不包含",equal?@"相等":@"不相等");
         
         
 //        TestObject *ob1 = [[TestObject alloc] initWithName:@"wahaha1" age:@(1) hegiht:1];
@@ -69,10 +82,13 @@ int main(int argc, const char * argv[]) {
         
 //        [TestDefaultDictionaryObject run];
         
-        [TestBaseObject run];
-        [TestEqualDictionaryObject run];
-        [TestEqualArrayObject run];
+//        [TestBaseObject run];
+//        [TestEqualArrayObject run];
         
+        for (NSUInteger index = 0; index< 20; index ++) {
+            [TestEqualDictionaryObject run];
+            [TestEqualSetObject run];
+        }
     }
     return 0;
 }

@@ -58,7 +58,7 @@
 ///MARK: - NSCopying
 
 - (id)copyWithZone:(nullable NSZone *)zone{
-    TestBaseObject *obj = [[TestBaseObject alloc] initWithName:self.name age:self.age hegiht:self.height];
+    TestBaseObject *obj = [[self.class alloc] initWithName:self.name age:self.age hegiht:self.height];
     return obj;
 }
 
