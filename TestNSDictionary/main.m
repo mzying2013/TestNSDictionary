@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <AppKit/AppKit.h>
-#import "TestObject.h"
 
 #import "TestDefaultDictionaryObject.h"
 #import "TestEqualDictionaryObject.h"

@@ -32,7 +32,7 @@
 
 
 - (NSUInteger)hash{
-    NSUInteger hash = (NSUInteger)self>>4;
+    NSUInteger hash = (NSUInteger)self;
     NSLog(@"%@<%p> hash %zi", NSStringFromClass(self.class), self, hash);
     return hash;
 }

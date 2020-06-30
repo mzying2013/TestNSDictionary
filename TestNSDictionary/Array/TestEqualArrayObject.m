@@ -44,41 +44,4 @@
 }
 
 
-///MARK: - Equal
-
-- (BOOL)isEqual:(id)other{
-
-    NSLog(@"%@ call isEqual method", self);
-
-    if (other == self) {
-        return YES;
-    } else if (![other isKindOfClass:self.class]) {
-        return NO;
-    } else {
-        return [self isEqualToObject:other];
-    }
-}
-
-
-- (BOOL)isEqualToObject:(TestEqualArrayObject *)other{
-    if (other == nil) {
-        return NO;
-    }
-
-    BOOL equalName = (self.name != nil && other.name != nil && [self.name isEqualToString:other.name]);
-    BOOL equalAge = (self.age != nil && other.age != nil && [self.age isEqualToNumber:other.age]);
-    BOOL equalHeight = self.height == other.height;
-
-    return equalName && equalAge && equalHeight;
-
-}
-
-
-- (NSUInteger)hash{
-    NSUInteger hash = self.name.hash ^ self.age.hash ^ self.height;
-    NSLog(@"%@ call hash method:%zi", self, hash);
-    return hash;
-}
-
-
 @end
